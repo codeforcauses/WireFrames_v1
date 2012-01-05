@@ -4,11 +4,82 @@
     <link media="all" type="text/css" rel="stylesheet" href="common/style.css" />
     <script type="text/javascript" src="common/jquery-1.7.min.js"></script>
     <script type="text/javascript" src="common/menus.js"></script>
+    <style type="text/css">
+    .pageblock {
+        float: left;
+        width: 48%;
+        min-width: 400px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        height: 500px;
+        overflow: hidden;
+    }
+    #contributuions {
+        height: 500px;
+        overflow:auto;
+    }
+    #contributuions p {
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+    .goal{
+        color:#339900;
+        background: #AAFF99;
+        border: dashed #339900 1px;
+    }
+    .place{
+        color:#003399;
+        background: #99AAFF;
+        border: dashed #003399 1px;
+    }
+    .datedetails {
+        color: #666666;
+        font-size: small;
+    }
+    </style>
   </head>
   <body>
     <div id="mainmenu" class="menu">main menu</div>
     <div id="bodycontent">
-      <!-- content goes here -->
+      <div class="pageblock">
+        <div id="contributuions">
+          <h3>Recent contributions</h3>
+          <p>
+            <a href="#"><strong>samlev</strong></a> - completed <a href="#"><span class="goal">Change of postal address</span></a> for <a href="#"><strong>Moddles Dog Shelter</strong></a>
+            <br /><span class="datedetails">1PM, 31st Jan, 2012</span>
+          </p>
+          <p>
+            <a href="#"><strong>phillip.morris</strong></a> - completed <a href="#"><span class="goal">Donation drive campaign mailout</span></a> for <a href="#"><strong>Cancer SUCKS</strong></a>
+            <br /><span class="datedetails">12:30PM, 31st Jan, 2012</span>
+          </p>
+          <p>
+            <a href="#"><strong>zoomereo</strong></a> - worked on <a href="#"><span class="goal">Donation drive system</span></a> for <a href="#"><strong>Cancer SUCKS</strong></a>
+            <br /><span class="datedetails">12:30PM, 31st Jan, 2012</span>
+          </p>
+          <p>
+            <a href="#"><strong>samlev</strong></a> -  completed <a href="#"><span class="goal">Upgrade to animal tracker</span></a> for <a href="#"><strong>Pets are friends too</strong></a>
+            <br /><span class="datedetails">11:30AM, 31st Jan, 2012</span>
+          </p>
+          <h3>Recent Causes</h3>
+          <p>
+            <a href="#"><strong>Moddles Dog Shelter</strong></a> - An animal shelter from <a href="#"><span class="place">Brisbane, Australia</span></a>
+            <br /><span class="datedetails">3PM, 30th Jan, 2012</span>
+          </p>
+          <p>
+            <a href="#"><strong>Freedom from fighting</strong></a> - A public awareness group from <a href="#"><span class="place">Newark, USA</span></a>
+            <br /><span class="datedetails">9AM, 30th Jan, 2012</span>
+          </p>
+          <p>
+            <a href="#"><strong>Speak up, Speak out</strong></a> - A social activism group from <a href="#"><span class="place">Manchester, UK</span></a>
+            <br /><span class="datedetails">8PM, 27th Jan, 2012</span>
+          </p>
+          <p>
+            <a href="#"><strong>Call for a cure</strong></a> - A research group from <a href="#"><span class="place">Hamburg, Germany</span></a>
+            <br /><span class="datedetails">10AM, 27th Jan, 2012</span>
+          </p>
+        </div>
+      </div>
+      <div class="visualClear"></div>
     </div>
     <div id="footer">
       Code For Causes wireframe - &copy; 2012 - <a href="http://www.code-for-causes.org">Code-For-Causes.org</a>

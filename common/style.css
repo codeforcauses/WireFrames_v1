@@ -14,3 +14,9 @@ body {
     font-size: smaller;
     text-align: right;
 }
+
+.visualClear {
+    clear:both;
+    height: 0px;
+    line-height: 0px;
+}
