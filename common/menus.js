@@ -1,12 +1,13 @@
 function build_menu(m) {
-    var page = $(document).attr('pathname');
-    var ul = '<ul>';
+    var page = document.location.pathname.match(/\/([a-zA-Z0-9]+\.html)$/)[1];
+    var mu = '';
     for (var i = 0; i < m.length; i++) {
+        if (mu.length > 0) mu += ' | ';
+        
         var a = (m[i].file == page ? ' class="active"' : '');
-        ul += '<li'+a+'><a href="'+m[i].file+'">'+m[i].title+'</a></li>';
+        mu += '<a '+a+'href="'+m[i].file+'">'+m[i].title+'</a>';
     }
-    ul += '</ul>';
-    return ul;
+    return mu;
 }
 
 // menu
