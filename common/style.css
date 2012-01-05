@@ -1,0 +1,8 @@
+#footer {
+    font-family: monospace;
+    color: #9F9F9F;
+    font-size: smaller;
+}
+#footer span {
+    float: right;
+}
