@@ -4,7 +4,7 @@ function build_menu(m) {
     for (var i = 0; i < m.length; i++) {
         if (mu.length > 0) mu += ' | ';
         
-        var a = (m[i].file == page ? ' class="active"' : '');
+        var a = (m[i].file == page || (page == undefined && i==0) ? ' class="active"' : '');
         mu += '<a '+a+'href="'+m[i].file+'">'+m[i].title+'</a>';
     }
     return mu;
