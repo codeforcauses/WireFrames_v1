@@ -11,14 +11,22 @@
         min-width: 400px;
         margin-left: 10px;
         margin-bottom: 10px;
-        height: 500px;
+        height: 400px;
         overflow: hidden;
     }
     #contributuions {
-        height: 500px;
+        height: 400px;
         overflow:auto;
     }
     #contributuions p {
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+    #find {
+        height: 400px;
+        overflow:auto;
+    }
+    #find p {
         margin-top: 3px;
         margin-bottom: 3px;
     }
@@ -41,6 +49,35 @@
   <body>
     <div id="mainmenu" class="menu">main menu</div>
     <div id="bodycontent">
+      <div class="pageblock">
+        <h3>About Code For Causes</h3>
+        <div style="width: 390px; height: 240px; margin-left: auto; margin-right: auto; border: solid #000000 1px;">
+          <object style="height: 240px; width: 390px"><param name="movie" value="http://www.youtube.com/v/J---aiyznGQ?version=3&feature=player_detailpage"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always"><embed src="http://www.youtube.com/v/J---aiyznGQ?version=3&feature=player_detailpage" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="390" height="240"></object>
+        </div>
+      </div>
+      <div class="pageblock">
+        <div class="goal" style="width:44%; float: left; margin-right:5px; padding: 3px;">
+          <h3>Join as a developer</h3>
+          <p>
+            Connect with
+            <br /><a href="#" style="margin-left: 40px;"><img src="images/logo-developer-github.png" alt="GitHub" /></a>
+          </p>
+          <p style="text-align:center;">- <strong>OR</strong> -</p>
+          <p>
+            Create a new account
+            <br />
+            Email: <input type="email" /><br />
+            Name: <input type="text" />
+          </p>
+        </div>
+        <div class="place" style="width:44%; float: right; margin-left:5px; padding: 3px;">
+          <h3>Join as a cause</h3>
+            Contact Email: <input type="email" /><br />
+            Cause Name: <input type="text" /><br />
+            What are you about? <input type="text" />
+        </div>
+      </div>
+      <div class="visualClear"></div>
       <div class="pageblock">
         <div id="contributuions">
           <h3 title="Would list 4-5 of the most recent contributions added">Recent contributions</h3>
@@ -80,53 +117,48 @@
         </div>
       </div>
       <div class="pageblock">
-        <p>
-          <strong title="Allows location-based search for local causes">Find causes near you</strong> -
-          <span class="datedetails">e.g. 'London, UK' or 'Sydney, Australia'</span><br />
-          <input type="search" />
-          <input type="button" value="Search" />
-        </p>
-        <p>
-          <strong title="Allows topic-based search for causes">Find causes you care about</strong> -
-          <span class="datedetails">e.g. 'animals' or 'cancer'</span><br />
-          <input type="search" />
-          <input type="button" value="Search" />
-        </p>
-        <div>
-          <h3 title="Either a staff pick or a sponsored link. Would possibly scroll several causes">Featured Cause</h3>
+        <div id="find">
           <p>
-            <a href="#"><strong>Cancer SUCKS</strong></a> is a cancer research group
-            focusing on early diagnosis and prevention. Over 120 developers have
-            helped them to complete over <a href="#"><span class="goal">580 goals</span></a>.
-            They have already made several medical breakthroughs, thanks to the
-            software and support they have recieved from you, the community.
-          </p>
-          <a href="#">Help this cause out now!</a>
-        </div>
-        <div>
-          <h3 title="Goals completed would be weighted over goals added to avoid gaming">Most active causes</h3>
-          <p>
-            <a href="#"><strong>Cancer SUCKS</strong></a> -
-            <a href="#"><span class="goal">28 goals</span></a> completed, and
-            <a href="#"><span class="goal">16 goals</span></a> added this week.
+            <strong title="Allows location-based search for local causes">Find causes near you</strong> -
+            <span class="datedetails">e.g. 'London, UK' or 'Sydney, Australia'</span><br />
+            <input type="search" />
+            <input type="button" value="Search" />
           </p>
           <p>
-            <a href="#"><strong>Homes for Hounds</strong></a> -
-            <a href="#"><span class="goal">19 goals</span></a> completed, and
-            <a href="#"><span class="goal">22 goals</span></a> added this week.
+            <strong title="Allows topic-based search for causes">Find causes you care about</strong> -
+            <span class="datedetails">e.g. 'animals' or 'cancer'</span><br />
+            <input type="search" />
+            <input type="button" value="Search" />
           </p>
-          <p>
-            <a href="#"><strong>Families for Life</strong></a> -
-            <a href="#"><span class="goal">20 goals</span></a> completed, and
-            <a href="#"><span class="goal">5 goals</span></a> added this week.
-          </p>
-        </div>
-      </div>
-      <div class="visualClear"></div>
-      <div class="pageblock">
-        <h3>About Code For Causes</h3>
-        <div style="width: 390px; height: 240px; margin-left: auto; margin-right: auto; border: solid #000000 1px;">
-          <object style="height: 240px; width: 390px"><param name="movie" value="http://www.youtube.com/v/J---aiyznGQ?version=3&feature=player_detailpage"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always"><embed src="http://www.youtube.com/v/J---aiyznGQ?version=3&feature=player_detailpage" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="390" height="240"></object>
+          <div>
+            <h3 title="Either a staff pick or a sponsored link. Would possibly scroll several causes">Featured Cause</h3>
+            <p>
+              <a href="#"><strong>Cancer SUCKS</strong></a> is a cancer research group
+              focusing on early diagnosis and prevention. Over 120 developers have
+              helped them to complete over <a href="#"><span class="goal">580 goals</span></a>.
+              They have already made several medical breakthroughs, thanks to the
+              software and support they have recieved from you, the community.
+            </p>
+            <a href="#">Help this cause out now!</a>
+          </div>
+          <div>
+            <h3 title="Goals completed would be weighted over goals added to avoid gaming">Most active causes</h3>
+            <p>
+              <a href="#"><strong>Cancer SUCKS</strong></a> -
+              <a href="#"><span class="goal">28 goals</span></a> completed, and
+              <a href="#"><span class="goal">16 goals</span></a> added this week.
+            </p>
+            <p>
+              <a href="#"><strong>Homes for Hounds</strong></a> -
+              <a href="#"><span class="goal">19 goals</span></a> completed, and
+              <a href="#"><span class="goal">22 goals</span></a> added this week.
+            </p>
+            <p>
+              <a href="#"><strong>Families for Life</strong></a> -
+              <a href="#"><span class="goal">20 goals</span></a> completed, and
+              <a href="#"><span class="goal">5 goals</span></a> added this week.
+            </p>
+          </div>
         </div>
       </div>
       <div class="visualClear"></div>
