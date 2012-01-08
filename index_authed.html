@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link media="all" type="text/css" rel="stylesheet" href="common/style.css" />
+    <script type="text/javascript" src="common/jquery-1.7.min.js"></script>
+    <script type="text/javascript" src="common/menus.js"></script>
+    <style type="text/css">
+    .pageblock {
+        float: left;
+        width: 48%;
+        min-width: 400px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        height: 500px;
+        overflow: hidden;
+    }
+    #contributuions {
+        height: 500px;
+        overflow:auto;
+    }
+    #contributuions p {
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+    #find {
+        height: 500px;
+        overflow:auto;
+    }
+    #find p {
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+    .goal{
+        color:#339900;
+        background: #AAFF99;
+        border: dashed #339900 1px;
+    }
+    .place{
+        color:#003399;
+        background: #99AAFF;
+        border: dashed #003399 1px;
+    }
+    .datedetails {
+        color: #666666;
+        font-size: small;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="mainmenu" class="menu">main menu</div>
+    <div id="bodycontent">
+      <div class="pageblock">
+        <div id="contributuions">
+          <h3 title="Would list 4-5 of the most recent contributions added">Recent contributions</h3>
+          <p>
+            <a href="#"><strong>samlev</strong></a> - completed <a href="#"><span class="goal">Change of postal address</span></a> for <a href="#"><strong>Moddles Dog Shelter</strong></a>
+            <br /><span class="datedetails">1PM, 31st Jan, 2012</span>
+          </p>
+          <p>
+            <a href="#"><strong>phillip.morris</strong></a> - completed <a href="#"><span class="goal">Donation drive campaign mailout</span></a> for <a href="#"><strong>Cancer SUCKS</strong></a>
+            <br /><span class="datedetails">12:30PM, 31st Jan, 2012</span>
+          </p>
+          <p>
+            <a href="#"><strong>zoomereo</strong></a> - worked on <a href="#"><span class="goal">Donation drive system</span></a> for <a href="#"><strong>Cancer SUCKS</strong></a>
+            <br /><span class="datedetails">12:30PM, 31st Jan, 2012</span>
+          </p>
+          <p>
+            <a href="#"><strong>samlev</strong></a> -  completed <a href="#"><span class="goal">Upgrade to animal tracker</span></a> for <a href="#"><strong>Pets are friends too</strong></a>
+            <br /><span class="datedetails">11:30AM, 31st Jan, 2012</span>
+          </p>
+          <h3 title="Would show 4-5 of the most recent causes added">Recent Causes</h3>
+          <p>
+            <a href="#"><strong>Moddles Dog Shelter</strong></a> - An animal shelter from <a href="#"><span class="place">Brisbane, Australia</span></a> with <a href="#"><span class="goal">3 goals</span></a>
+            <br /><span class="datedetails">3PM, 30th Jan, 2012</span>
+          </p>
+          <p>
+            <a href="#"><strong>Freedom from fighting</strong></a> - A public awareness group from <a href="#"><span class="place">Newark, USA</span></a> with <a href="#"><span class="goal">1 goal</span></a>
+            <br /><span class="datedetails">9AM, 30th Jan, 2012</span>
+          </p>
+          <p>
+            <a href="#"><strong>Speak up, Speak out</strong></a> - A social activism group from <a href="#"><span class="place">Manchester, UK</span></a> with <a href="#"><span class="goal">12 goals</span></a>
+            <br /><span class="datedetails">8PM, 27th Jan, 2012</span>
+          </p>
+          <p>
+            <a href="#"><strong>Call for a cure</strong></a> - A research group from <a href="#"><span class="place">Hamburg, Germany</span></a> with <a href="#"><span class="goal">2 goals</span></a>
+            <br /><span class="datedetails">10AM, 27th Jan, 2012</span>
+          </p>
+        </div>
+      </div>
+      <div class="pageblock">
+        <div id="find">
+          <p>
+            <strong title="Allows location-based search for local causes">Find causes near you</strong> -
+            <span class="datedetails">e.g. 'London, UK' or 'Sydney, Australia'</span><br />
+            <input type="search" />
+            <input type="button" value="Search" />
+          </p>
+          <p>
+            <strong title="Allows topic-based search for causes">Find causes you care about</strong> -
+            <span class="datedetails">e.g. 'animals' or 'cancer'</span><br />
+            <input type="search" />
+            <input type="button" value="Search" />
+          </p>
+          <div>
+            <h3 title="Either a staff pick or a sponsored link. Would possibly scroll several causes">Featured Cause</h3>
+            <p>
+              <a href="#"><strong>Cancer SUCKS</strong></a> is a cancer research group
+              focusing on early diagnosis and prevention. Over 120 developers have
+              helped them to complete over <a href="#"><span class="goal">580 goals</span></a>.
+              They have already made several medical breakthroughs, thanks to the
+              software and support they have recieved from you, the community.
+            </p>
+            <a href="#">Help this cause out now!</a>
+          </div>
+          <div>
+            <h3 title="Goals completed would be weighted over goals added to avoid gaming">Most active causes</h3>
+            <p>
+              <a href="#"><strong>Cancer SUCKS</strong></a> -
+              <a href="#"><span class="goal">28 goals</span></a> completed, and
+              <a href="#"><span class="goal">16 goals</span></a> added this week.
+            </p>
+            <p>
+              <a href="#"><strong>Homes for Hounds</strong></a> -
+              <a href="#"><span class="goal">19 goals</span></a> completed, and
+              <a href="#"><span class="goal">22 goals</span></a> added this week.
+            </p>
+            <p>
+              <a href="#"><strong>Families for Life</strong></a> -
+              <a href="#"><span class="goal">20 goals</span></a> completed, and
+              <a href="#"><span class="goal">5 goals</span></a> added this week.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="visualClear"></div>
+    </div>
+    <div id="footer">
+      Code For Causes wireframe - &copy; 2012 - <a href="http://www.code-for-causes.org">Code-For-Causes.org</a>
+    </div>
+  </body>
+</html>
